@@ -1,0 +1,13 @@
+numpy>=1.18.4
+uniplot>=0.10.0
+scipy>=1.4.1
+nidaqmx>=0.7.0
+nimodinst>=1.4.5
+nise>=1.4.5
+nidmm>=1.4.5
+niswitch>=1.4.5
+nifgen>=1.4.5
+nidcpower>=1.4.5
+niscope>=1.4.5
+nidigital>=1.4.5
+```

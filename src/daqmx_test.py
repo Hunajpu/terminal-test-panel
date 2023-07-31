@@ -2,14 +2,11 @@
 # Analog output and input, Digital I/O or Counter I/O.
 
 import nidaqmx
-import numpy as np
+from devices import Devices
 
-# Analog output test
-def ao_test(device_name, channel_name, voltage):
-    with nidaqmx.Task() as task:
-        task.ao_channels.add_ao_voltage_chan(device_name + '/' + channel_name)
-        task.write(voltage, auto_start=True)
+sys = Devices()
 
-def ai_test(device_name, channel_name):
-    with nidaqmx.Task() as task:
-        task.ai_channels.add_ai_voltage_chan(device_name + '/' + channel_name)
+sys.set_current_device(10)
+
+print(sys.get_devices_info())
+print(sys.get_channels_types())
